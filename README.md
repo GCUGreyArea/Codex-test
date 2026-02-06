@@ -12,9 +12,13 @@ Note that I had already used tokens on a task yesterday, so this is not a perfec
 
 ## Instructions and interaction
 
+### Initial ask
+
 ```text
 I would like you to create a JSON parser that implements jqpath. It should be possible to run an expressions such as .name[] = "Barry" for the appropriate JSON strucure. The implementation should build to a shared library, and it should have unit tests for all features.
 ```
+
+### This is what happened 
 
 ```text
 Explored 1 file, 2 lists
