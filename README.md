@@ -1,8 +1,12 @@
 # Codex build task
 
-## Headline 
+## Headline
 
 This project is entirely geenrated to Codex. What follows are the interactions that creatred this.
+
+For reference, Codex's view of what happened (which I got it to created) can be read [hear](resources/system_instructions.md)
+
+![used](resources/tokens.png)
 
 ## Instructions
 
@@ -343,4 +347,46 @@ include/jsonpath/json.hpp
 src/json.cpp
 src/jsonpath.cpp
 tests/jsonpath_tests.cpp
+```
+
+```bash
+Summary
+
+Implemented a C++ JSON parser and JSONPath compiler/evaluator that builds a shared library libjsonpath.so.
+JSON is stored as unordered_map/vector with std::shared_ptr<Json> for efficient lookups and stable node references, and JSONPath is compiled to an AST for reuse.
+Added a GoogleTest suite with a test_main.
+What’s Implemented
+
+Root $, relative @ in filters, dot and bracket child selectors, wildcard *, unions, slices (including negative indices/steps), recursive descent .., filter expressions with == != < <= > >= and && || !, and functions length, count, match, search, value.
+Files
+
+json.hpp
+jsonpath.hpp
+json.cpp
+jsonpath.cpp
+test_main.cpp
+jsonpath_tests.cpp
+Makefile
+Build/Test
+
+make
+make test
+Notes
+
+match and search use std::regex ECMAScript; if you need strict I-Regexp behavior, say the word and I’ll adjust.
+Tests ran successfully with make test.
+If you want a small example usage snippet or additional API surface (e.g., returning JSON values instead of node pointers), I can add it.
+
+
+4 files changed
++29
+-26
+Undo
+
+Review
+include/jsonpath/json.hpp
+src/json.cpp
+src/jsonpath.cpp
+tests/jsonpath_tests.cpp
+
 ```
