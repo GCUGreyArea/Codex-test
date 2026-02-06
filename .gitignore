@@ -15,12 +15,6 @@
 *_test
 *_tests
 
-# CMake (if used later)
-/CMakeFiles/
-/CMakeCache.txt
-/cmake_install.cmake
-/Makefile
-
 # IDE/editor
 *.swp
 *.swo
