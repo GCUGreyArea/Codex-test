@@ -8,7 +8,9 @@ For reference, Codex's view of what happened (which I got it to created) can be 
 
 ![used](resources/tokens.png)
 
-## Instructions
+Note that I had already used tokens on a task yesterday, so this is not a perfect view of the world.
+
+## Instructions and interaction
 
 ```text
 I would like you to create a JSON parser that implements jqpath. It should be possible to run an expressions such as .name[] = "Barry" for the appropriate JSON strucure. The implementation should build to a shared library, and it should have unit tests for all features.
