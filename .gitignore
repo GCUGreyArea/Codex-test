@@ -1,0 +1,42 @@
+# Build outputs
+/build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Dependency files
+*.d
+
+# Test binaries
+*_test
+*_tests
+
+# CMake (if used later)
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+
+# IDE/editor
+*.swp
+*.swo
+*.swn
+*~
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Coverage
+*.gcov
+*.gcda
+*.gcno
+*.lcov
